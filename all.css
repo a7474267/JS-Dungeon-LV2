@@ -195,6 +195,7 @@ table {
 	top: 50px;
     transform-origin: 7px 125px;   
 }
+/* 秒針每1段線的基本樣式 */
 .clockBack .secondHand .line {
 	width: 2px;
 	border-radius: 1px;
@@ -203,33 +204,52 @@ table {
 	left: 6px;
 	transform-origin: 1px 1px;
 }
-
+/* 秒針第1段線 */
 .clockBack .secondHand #line1 {
 	height: 41px;
 	top: 7px;
 	border-radius: 0px 0px 1px 1px;
 }
-
+/* 秒針第2段線 */
 .clockBack .secondHand #line2 {
 	height: 10px;
 	top: 47px;
 	transform: rotate(-45deg);
 }
-
+/* 秒針第3段線 */
 .clockBack .secondHand #line3 {
 	height: 20px;
 	top: 53px;
 	transform: translateX(6px) rotate(45deg);
 }
-
+/* 秒針第4段線 */
 .clockBack .secondHand #line4 {
 	height: 12px;
 	top: 66px;
 	transform: translateX(-7px) rotate(-45deg);
 }
-
+/* 秒針第5段線 */
 .clockBack .secondHand #line5 {
 	height: 53px;
 	top: 73px;
 	border-radius: 1px 1px 0px 0px;
+}
+/* 秒針尾端的綠色圓圈 */
+.clockBack .secondHand .green-circle {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #b1ff00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 3px;
+}
+/* 秒針尾端的綠色圓圈，裡面還有一個黑色圓圈 */
+.clockBack .secondHand .green-circle .black-circle {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	border: 1px solid #293b29;
 }
